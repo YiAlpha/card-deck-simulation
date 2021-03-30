@@ -73,7 +73,7 @@ def mean_test(meanTest_size = 10):
 run_result = mean_test(100000)
 ```
 
-Then I map each result on a plot to show the distribution of results from 100,000 times trails. We can see that most of the mean values obtained from one hundred thousand time trials fall into the $[6.5, 7.5]$ interval.
+Then I map each result on a plot to show the distribution of results from 100,000 times trails. We can see that most of the mean values obtained from one hundred thousand time trials fall into the [6.5, 7.5] interval.
 
 ![multiple_ori](images/figure_2.png)
 
@@ -116,10 +116,11 @@ def is_pair(hand_list):
         return 0
 ```
 
-To obtain the frequency of pair occurrence, I repeat the procedure (draw a hand from a randomly shuffled deck, and then test whether there is a pair) 1000 times. The `pair_test()` result printed as $1$ if there is a pair in the drawn hand, $0$ otherwise.
-$$
-\text{Probability  of  getting  a pair} = \frac{\text{Number of pair occurance}}{\text{Total times of draw}}
-$$
+To obtain the frequency of pair occurrence, I repeat the procedure (draw a hand from a randomly shuffled deck, and then test whether there is a pair) 1000 times. The `pair_test()` result printed as 1 if there is a pair in the drawn hand, 0 otherwise.
+
+<img src="https://render.githubusercontent.com/render/math?math=\text{Probability  of  getting  a pair} = \cfrac{\text{Number of pair occurance}}{\text{Total times of draw}}">
+
+
 
 ```python
 def get_pair_rate(pairTest_size = 1000):
@@ -185,10 +186,11 @@ def flush_test():
         return 0
 ```
 
-And I was then writing a function `get_flush_rate()` to draw 1000 hands with replacement from a deck of randomly shuffled cards and test each whether there is a flush. The `flush_test()` result printed as $1$ if there is a pair in the drawn hand, $0$ otherwise. Finally, calculate the frequency of flush occurrence to approximate the probability.
-$$
-\text{Probability  of  getting  a flush} = \frac{\text{Number of flush occurance}}{\text{Total times of draw}}
-$$
+And I was then writing a function `get_flush_rate()` to draw 1000 hands with replacement from a deck of randomly shuffled cards and test each whether there is a flush. The `flush_test()` result printed as 1 if there is a pair in the drawn hand, 0 otherwise. Finally, calculate the frequency of flush occurrence to approximate the probability.
+
+<img src="https://render.githubusercontent.com/render/math?math=\text{Probability  of  getting  a flush} = \cfrac{\text{Number of flush occurance}}{\text{Total times of draw}}">
+
+
 
 ```python
 def get_flush_rate(flushTest_size = 1000):
